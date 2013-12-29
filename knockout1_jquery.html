@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knockout JS / jQuery Howto</title>
+
+    <!-- http://knockoutjs.com/ -->
+    <!-- http://jquery.com -->
+    <!-- http://jquerymobile.com -->
+
+
+
+</head>
+
+<body>
+<p>Vorname: <input id="firstName" /></p>
+
+<p>Vorname: <span data-bind="text:firstName"></span></p>
+
+
+<script type='text/javascript' src='knockout-3.0.0.js'></script>
+<script src="jquery-1.10.2.js"></script>
+<script src="my_jquery.js"></script>
+<script>
+    var obj={
+        firstName:'Mein Vorname'
+    };
+    ko.applyBindings(obj);
+
+</script>
+
+</body>
+</html>
